@@ -21,6 +21,7 @@ spec:
           image: tarunrepo.azurecr.io/tarun_python_test
           ports:
             - containerPort: 5000
+
 ---
 apiVersion: v1
 kind: Service 
@@ -37,3 +38,5 @@ spec:
     - name: http
       port: 5000 
       targetPort: 5000
+
+
