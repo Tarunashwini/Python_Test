@@ -24,9 +24,6 @@ stages:
         Dockerfile: '**/Dockerfile'
         tags: 
           $(Build.SourceVersion)
-          
-    - bash: echo Contents in System Default Working Directory; ls -R $(System.DefaultWorkingDirectory)        
-    - bash: echo Before copying Contents in Build Artifact Directory; ls -R $(Build.ArtifactStagingDirectory)
 
     - task: CopyFiles@2
       inputs:
