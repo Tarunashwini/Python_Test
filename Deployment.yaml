@@ -18,7 +18,7 @@ spec:
     spec: 
       containers: 
         - name: python-app
-          image: bhanurepo.azurecr.io/pythonpushtoacr
+          image: tarunrepo.azurecr.io/tarun_python_test
           ports:
             - containerPort: 5000
 ---
