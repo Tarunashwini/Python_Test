@@ -23,7 +23,7 @@ stages:
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: 
-          $(Build.SourceVersion)
+          $(Build.BuildId)
 
     - task: CopyFiles@2
       inputs:
